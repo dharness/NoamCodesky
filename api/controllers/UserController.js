@@ -10,8 +10,6 @@ module.exports = {
 
     create: function(req, res, next) {
 
-        console.log(req.params.all());
-
         User.create(req.params.all(), function userCreated(err, user) {
             if (err) {
                 return next(err);
@@ -35,13 +33,9 @@ module.exports = {
                 }
             });
 
-
-
             res.view('homepage');
 
         })
-
-
     }
 
 };

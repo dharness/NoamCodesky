@@ -14,11 +14,6 @@ module.exports = {
             required: true
         },
 
-        lastname: {
-            type: 'string',
-            required: true
-        },
-
         email: {
             type: 'string',
             email: true,
